@@ -29,6 +29,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/flameshot-org/flameshot.git
-        #tag: "v0.8.4"
-        bracnh: "master"
-        commit: "f11073bc00f1f656a590daa940e7497400f273cb"
+        tag: "v0.8.5"
+        commit: "376a6f2a9c17449d00f93ff8fcfb8e5ab6c17339"
