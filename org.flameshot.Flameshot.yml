@@ -30,4 +30,4 @@ modules:
       - type: git
         url: https://github.com/flameshot-org/flameshot.git
         tag: "v0.9.0"
-        commit: "856e08a019b8e9adc9f92ca24380940492ad172c"
+        commit: "5690afbd4be857e20e0ff6f100c890a7250cccfe"
