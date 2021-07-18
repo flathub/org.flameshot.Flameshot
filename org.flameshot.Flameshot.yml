@@ -27,7 +27,11 @@ modules:
     config-opts:
       - -DCMAKE_BUILD_TYPE=Release
     sources:
-      - type: git
-        url: https://github.com/flameshot-org/flameshot.git
-        tag: "v0.9.0"
-        commit: "5690afbd4be857e20e0ff6f100c890a7250cccfe"
+      - type: archive
+        url: https://github.com/flameshot-org/flameshot/archive/v0.9.0.tar.gz
+        sha256: 67e0b578ef8a68228e758cb59395bb7404b5c176e9dbc3ca2d83a63f154a6f22
+        x-checker-data:
+          type: anitya
+          project-id: 16948
+          stable-only: true
+          url-template: https://github.com/flameshot-org/flameshot/archive/v$version.tar.gz
