@@ -30,8 +30,8 @@ modules:
       - desktop-file-edit --set-key=Exec --set-value=flameshot ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop
     sources:
       - type: archive
-        url: https://github.com/flameshot-org/flameshot/archive/v0.10.1.tar.gz
-        sha256: c2d760345d78dd5d2488c6bea54cb10870b09772179f33594a33c8f62ccdeeb9
+        url: https://github.com/flameshot-org/flameshot/archive/v0.10.2.tar.gz
+        sha256: 951c8170b7be2f12e4446f6367e8fa176eb3489fe24c0cef8dfda0bd180e61f9
         x-checker-data:
           type: anitya
           project-id: 16948
