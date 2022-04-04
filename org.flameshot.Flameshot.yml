@@ -26,8 +26,6 @@ modules:
     buildsystem: cmake-ninja
     config-opts:
       - -DCMAKE_BUILD_TYPE=Release
-    post-install:
-      - desktop-file-edit --set-key=Exec --set-value=flameshot ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop
     sources:
       - type: archive
         url: https://github.com/flameshot-org/flameshot/archive/v11.0.0.tar.gz
