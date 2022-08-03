@@ -28,13 +28,15 @@ modules:
       - -DCMAKE_BUILD_TYPE=Release
     sources:
       - type: archive
-        url: https://github.com/flameshot-org/flameshot/archive/v12.1.0.tar.gz
+        url: https://github.com/flameshot-org/flameshot/archive/v12.1.0/flameshot-12.1.0.tar.gz
         sha256: c82c05d554e7a6d810aca8417ca12b21e4f74864455ab4ac94602668f85ac22a
         x-checker-data:
-          type: anitya
-          project-id: 16948
-          stable-only: true
-          url-template: https://github.com/flameshot-org/flameshot/archive/v$version.tar.gz
+          is-main-source: true
+          type: json
+          url: https://api.github.com/repos/flameshot-org/flameshot/releases/latest
+          version-query: .tag_name | sub("^v"; "")
+          url-query: '"https://github.com/flameshot-org/flameshot/archive/v" + $version
+            + "/flameshot-" + $version + ".tar.gz"'
     cleanup:
       - /share/bash-completion
       - /share/man
