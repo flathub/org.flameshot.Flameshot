@@ -20,7 +20,6 @@ finish-args:
   - --talk-name=org.freedesktop.Notifications
   # System Tray Icon
   - --talk-name=org.kde.StatusNotifierWatcher
-  - --own-name=org.kde.*
 modules:
   - name: flameshot
     buildsystem: cmake-ninja
