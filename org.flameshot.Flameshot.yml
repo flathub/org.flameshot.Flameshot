@@ -1,6 +1,6 @@
 app-id: org.flameshot.Flameshot
 runtime: org.kde.Platform
-runtime-version: 5.15-21.08
+runtime-version: 5.15-23.08
 sdk: org.kde.Sdk
 command: flameshot
 finish-args:
@@ -14,13 +14,10 @@ finish-args:
   - --share=network
   # QtSingleApplication, allow other instances to see log files
   - --env=TMPDIR=/var/tmp
-  # Allow loading/saving files from anywhere
-  - --filesystem=host
   # Notification access
   - --talk-name=org.freedesktop.Notifications
   # System Tray Icon
   - --talk-name=org.kde.StatusNotifierWatcher
-  - --own-name=org.kde.*
 modules:
   - name: flameshot
     buildsystem: cmake-ninja
