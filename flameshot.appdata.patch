@@ -1,0 +1,14 @@
+diff --git i/data/appdata/org.flameshot.Flameshot.metainfo.xml w/data/appdata/org.flameshot.Flameshot.metainfo.xml
+index a4242951..8a948c3c 100644
+--- i/data/appdata/org.flameshot.Flameshot.metainfo.xml
++++ w/data/appdata/org.flameshot.Flameshot.metainfo.xml
+@@ -8,6 +8,9 @@ SPDX-License-Identifier: CC0-1.0
+   <metadata_license>CC0-1.0</metadata_license>
+   <project_license>GPL-3.0-or-later</project_license>
+   <name>Flameshot</name>
++  <developer id="org.flameshot">
++    <name>Flameshot Developers</name>
++  </developer>
+   <releases>
+     <release version="12.1.0" date="2022-07-03"/>
+     <release version="12.0.0" date="2022-06-21"/>

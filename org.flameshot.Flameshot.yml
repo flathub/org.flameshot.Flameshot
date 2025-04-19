@@ -34,6 +34,8 @@ modules:
           project-id: 16948
           stable-only: true
           url-template: https://github.com/flameshot-org/flameshot/archive/v$version.tar.gz
+      - type: patch
+        path: flameshot.appdata.patch
     cleanup:
       - /share/bash-completion
       - /share/man
