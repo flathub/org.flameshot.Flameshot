@@ -24,15 +24,23 @@ modules:
   - name: flameshot
     buildsystem: cmake-ninja
     build-options:
-      build-args:
-        - --share=network
     config-opts:
       - -DCMAKE_BUILD_TYPE=Release 
       - -DUSE_WAYLAND_CLIPBOARD=1
     sources:
       - type: git
+        url: https://gitlab.com/mattbas/Qt-Color-Widgets.git
+        commit: 352bc8f99bf2174d5724ee70623427aa31ddc26a
+        dest: external/Qt-Color-Widgets
+
+      - type: git
+        url: https://github.com/KDAB/KDSingleApplication.git
+        tag: v1.2.0
+        dest: external/KDSingleApplication
+        
+      - type: git
         url: https://github.com/flameshot-org/flameshot.git
-        tag: v13.0.0
+        commit: 24332cf77a9ae19bfe0096a025bf0638e9b54835
 
     cleanup:
       - /share/bash-completion
