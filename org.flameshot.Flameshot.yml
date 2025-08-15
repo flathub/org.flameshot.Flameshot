@@ -39,7 +39,7 @@ modules:
         
       - type: git
         url: https://github.com/flameshot-org/flameshot.git
-        commit: ccb7db6a1c2bcac03b87bbcee2b3e44c1fee20ee
+        tag: v13.1.0
 
     cleanup:
       - /share/bash-completion
