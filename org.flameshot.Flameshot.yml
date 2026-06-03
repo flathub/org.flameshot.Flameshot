@@ -43,7 +43,8 @@ modules:
 
       - type: git
         url: https://github.com/KDAB/KDSingleApplication.git
-        tag: v1.2.0
+        tag: v1.2.1
+        commit: b63420aebb78df20e37310bb090f075990a5a4f6
         dest: external/KDSingleApplication
         
       - type: git
