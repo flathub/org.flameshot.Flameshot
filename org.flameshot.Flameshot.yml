@@ -20,6 +20,14 @@ finish-args:
   - --talk-name=org.freedesktop.Notifications
   # System Tray Icon
   - --talk-name=org.kde.StatusNotifierWatcher
+cleanup:
+  - /include
+  - /lib/cmake
+  - /share/bash-completion
+  - /share/fish
+  - /share/man
+  - /share/zsh
+  - '*.a'
 modules:
   - name: flameshot
     buildsystem: cmake-ninja
@@ -41,7 +49,3 @@ modules:
         url: https://github.com/flameshot-org/flameshot.git
         tag: v13.3.0
 
-    cleanup:
-      - /share/bash-completion
-      - /share/man
-      - /share/zsh
