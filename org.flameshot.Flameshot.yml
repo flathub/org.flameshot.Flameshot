@@ -34,6 +34,7 @@ modules:
     config-opts:
       - -DCMAKE_BUILD_TYPE=Release 
       - -DUSE_WAYLAND_CLIPBOARD=1
+      - -DDISABLE_UPDATE_CHECKER=ON
     sources:
       - type: git
         url: https://gitlab.com/mattbas/Qt-Color-Widgets.git
