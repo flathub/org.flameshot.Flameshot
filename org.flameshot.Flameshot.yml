@@ -48,4 +48,5 @@ modules:
       - type: git
         url: https://github.com/flameshot-org/flameshot.git
         tag: v13.3.0
+        commit: 88c951e771fd57bccf6d8f1539a03df47316368d
 
