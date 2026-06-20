@@ -29,7 +29,7 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/mattbas/Qt-Color-Widgets.git
-        commit: 352bc8f99bf2174d5724ee70623427aa31ddc26a
+        commit: 5d52e907e50dc88cf969b41cea44665ff6c475b1
         dest: external/Qt-Color-Widgets
 
       - type: git
@@ -39,7 +39,7 @@ modules:
         
       - type: git
         url: https://github.com/flameshot-org/flameshot.git
-        tag: v13.3.0
+        tag: v14.0.0
 
     cleanup:
       - /share/bash-completion
